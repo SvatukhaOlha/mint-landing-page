@@ -1,167 +1,302 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Signika:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Signika:wght@300&display=swap");
 
 :root {
-  --main-color: #393a3d;
-  --second-color: #1B8381;
+  --main-font-color: #393a3d;
+  --second-backgrn-color: #1b8381;
   --background-color: #effffd;
+  --small-backgrn-color: #1b8381;
   --link-color: #54b4cb;
+  --icons-color: #02cda9;
   margin: 0px;
   padding: 0px;
-  font: 300 18px 'Signika' sans-serif;
+  font: 300 18px "Signika", serif;
 }
 
 body {
-    width: 400px;
+  width: 400px;
 }
 
 a {
-    color: var(--link-color)!important;
-    text-decoration: none!important;
-}
-
-h3 {
-    font-size: 20px!important;
-}
-
-.navbar {
-    padding: 0px 10px 0px 0px!important;
-}
-
-.logo {
-    display: none;
-}
-
-.navbar-toggler {
-    border-color: transparent!important;
-}
-
-.logo-mobile {
-    padding-left: 10px;
-    width: 50px;
-    height: 50px;
-}
-
-.navbar-singin-butt {
-    display: flex;
-    border: black solid 0.5px;
-    border-radius: 5px;
-    padding: 0px 5px;
-    align-items: center;
-}
-
-.sign-in-but {
-    margin: 0px;
-    padding-left: 5px;
-}
-
-.header-main {
-    background-color: var(--background-color);
-}
-
-.header-main-text {
-    text-align: center;
-    padding: 0px 10px;
-}
-
-.main-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  color: var(--link-color) !important;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 h1 {
-    font: 600 25px 'Heebo' sans-serif;
-    margin: 0px!important;
+  font: 600 25px "Heebo", sans-serif;
+  margin: 0px !important;
+  padding-top: 10px;
 }
 
-.second-color {
-    color: var(--second-color);
+h3 {
+  font-size: 20px !important;
+  padding-top: 10px;
+}
+
+h5 {
+  color: var(--background-color);
 }
 
 .main-text {
-    padding: 10px 0px;
+  padding: 5px;
 }
 
-.btn {
-    background-color: var(--second-color)!important;
-    border-color: var(--second-color)!important;
-}
-
-.pay-buttons {
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-}
-
-.pay-but {
-    height: 30px;
-    width: 45%;
-    margin-top: 10px;
-    position: relative;
-}
-
-.main {
-    padding-top: 5px;
-}
-
-.check-section {
-    background-color: #109087;
-}
-
-.check-container {
-    display: flex;
-    font: 400 18px "Heebo" sans-serif!important;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding-bottom: 10px;
-}
-
-.fa-check-circle {
-    color: #54b4cb;
-    padding-right: 5px;
+.white-text {
+  color: var(--background-color);
+  text-align: center;
+  margin: 0px;
 }
 
 .bold-text {
-    margin: 0px;
+  font-weight: 600;
+  margin: 0px;
 }
 
-/* .white-check {
-    background-color: white;
-    width: 20px;
-} */
+.text-center {
+  text-align: center;
+  position: absolute;
+  font-style: italic;
+}
+
+.small-text,
+.small-link {
+  font-size: 12px;
+  margin: 0px 10px;
+}
+
+.second-color {
+  color: var(--second-backgrn-color);
+}
+
+.navbar {
+  padding: 0px 10px 0px 0px !important;
+}
+
+.logo {
+  display: none;
+}
+
+.btn {
+  background-color: var(--second-backgrn-color) !important;
+  border-color: var(--second-backgrn-color) !important;
+}
+
+.btn-white {
+  background-color: transparent !important;
+  border-color: var(--background-color) !important;
+  color: var(--background-color) !important;
+  margin: 20px 0px 50px 0px;
+}
+
+.fab,
+.fas {
+  color: var(--icons-color);
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
+.logo-mobile {
+  padding-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-singin-butt {
+  display: flex;
+  border: black solid 0.5px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  align-items: center;
+}
+
+.sign-in-but {
+  margin: 0px;
+  padding-left: 5px;
+}
+
+.header-main {
+  background-color: var(--background-color);
+}
+
+.header-main-text {
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.main-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.pay-buttons {
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+.pay-but {
+  height: 30px;
+  width: 45%;
+  margin-top: 10px;
+  position: relative;
+}
+
+.main {
+  padding-top: 5px;
+}
+
+.check-section {
+  background-color: var(--small-backgrn-color);
+}
+
+.check-container {
+  display: flex;
+  font: 400 18px "Heebo", sans-serif;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+.fa-check-circle {
+  padding-right: 5px;
+}
 
 .w-100 {
-    height: 300px;
+  height: 300px;
 }
 
 .carousel-text {
-    text-align: center;
+  text-align: center;
 }
 
 .features-section {
-    background-color: var(--background-color);
-    text-align: center;
-    padding-top: 10px;
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 10px 0px;
 }
 
 .clients-logo {
-    height: 100px;
+  height: 100px;
 }
 
 .team-backgroud {
-    position: relative;
+  position: relative;
+  height: 300px;
+}
+
+.team-container {
+  position: absolute;
+  top: 40%;
+  padding-left: 50px;
+  display: flex;
 }
 
 .team {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 80%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
+.team-text {
+  padding-left: 10px;
+}
+
+.get-free-app {
+  background-color: var(--small-backgrn-color);
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.contacts-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: 26px;
+}
+
+.privacy-and-tearms {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+@media (min-width: 770px) {
+
+  body {
+    width: 770px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo {
+    display: inline;
+  }
+
+  .navbar-nav {
+    margin: 0px !important;
+  }
+
+  .pay-buttons {
+    height: 60px;
+    width: 30%;
+  }
+
+  .check-section {
+    display: flex;
+    padding: 20px 50px;
+  }
+
+  .w-100 {
+    height: 100%;
+  }
+
+  .icons-contanior {
+      display: flex;
+  }
+
+  .features-section, .team-backgroud {
+    width: -webkit-fill-available;
+  }
+
+  .team {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+@media(max-width: 1025px) {
+    :root {
+        font: 300 25px "Signika", serif;
+    }
+    
+    body {
+        width: 1025px;
+    }
+
+    .white-text {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 50%;
+        margin: 10px 250px;
+    }
+
+    .team-backgroud {
+        height: 500px;
+    }
+
+    .small-text {
+        font-size: 18px;
+    }
 }
